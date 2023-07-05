@@ -179,3 +179,249 @@ where id = 1
 [0m17:44:02.191682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A4BF3C790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A4CBF0E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A4B55ABD0>]}
 [0m17:44:02.192684 [debug] [MainThread]: Flushing usage events
 [0m17:44:02.244683 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m18:46:57.218549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DF31296D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DF316D350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DF2C66CD0>]}
+
+
+============================== 18:46:57.224550 | 0c3d2b79-de63-4174-bc5c-f243bb89676e ==============================
+[0m18:46:57.224550 [info ] [MainThread]: Running with dbt=1.5.2
+[0m18:46:57.225548 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\SNando01\\.dbt', 'log_path': 'C:\\Users\\SNando01\\DBT_POC\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:46:57.226549 [info ] [MainThread]: dbt version: 1.5.2
+[0m18:46:57.227551 [info ] [MainThread]: python version: 3.11.4
+[0m18:46:57.228556 [info ] [MainThread]: python path: C:\Users\SNando01\dbt-venv\Scripts\python.exe
+[0m18:46:57.231548 [info ] [MainThread]: os info: Windows-10-10.0.22000-SP0
+[0m18:46:57.232547 [info ] [MainThread]: Using profiles.yml file at C:\Users\SNando01\.dbt\profiles.yml
+[0m18:46:57.233547 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\SNando01\DBT_POC\dbt_project.yml
+[0m18:46:57.234547 [info ] [MainThread]: Configuration:
+[0m18:46:57.588552 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:46:57.640552 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:46:57.642550 [info ] [MainThread]: Required dependencies:
+[0m18:46:57.644551 [debug] [MainThread]: Executing "git --help"
+[0m18:46:58.195551 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:46:58.196552 [debug] [MainThread]: STDERR: "b''"
+[0m18:46:58.197551 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:46:58.198555 [info ] [MainThread]: Connection:
+[0m18:46:58.199552 [info ] [MainThread]:   account: bk40750.east-us-2.azure
+[0m18:46:58.200553 [info ] [MainThread]:   user: MHennes3
+[0m18:46:58.201551 [info ] [MainThread]:   database: COMMEX_DB
+[0m18:46:58.202553 [info ] [MainThread]:   schema: DIGITAL_SHELF_DBT
+[0m18:46:58.203551 [info ] [MainThread]:   warehouse: DEV_COMX_GLOBAL_APP1_WH
+[0m18:46:58.205552 [info ] [MainThread]:   role: DEV_COMX_GLOBAL_DEVELOPER_FR
+[0m18:46:58.206550 [info ] [MainThread]:   client_session_keep_alive: False
+[0m18:46:58.207553 [info ] [MainThread]:   query_tag: None
+[0m18:46:58.208553 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m18:46:58.210554 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m18:46:58.211553 [debug] [MainThread]: Using snowflake connection "debug"
+[0m18:46:58.212553 [debug] [MainThread]: On debug: select 1 as id
+[0m18:46:58.212553 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:00.365334 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:47:00.367335 [debug] [MainThread]: On debug: Close
+[0m18:47:00.865699 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:47:00.866697 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:47:00.868697 [debug] [MainThread]: Command `dbt debug` succeeded at 18:47:00.868697 after 3.96 seconds
+[0m18:47:00.869699 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:47:00.869699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DF36F1290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DF2CD6910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DF316CDD0>]}
+[0m18:47:00.870700 [debug] [MainThread]: Flushing usage events
+[0m18:47:00.942698 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m18:47:09.216589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000165645D16D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016564548D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656454F510>]}
+
+
+============================== 18:47:09.222590 | b7d376c7-01ad-4f47-8422-d3dd198cf0b2 ==============================
+[0m18:47:09.222590 [info ] [MainThread]: Running with dbt=1.5.2
+[0m18:47:09.224590 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\SNando01\\.dbt', 'log_path': 'C:\\Users\\SNando01\\DBT_POC\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:09.670160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016564B79D90>]}
+[0m18:47:09.692159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016565645850>]}
+[0m18:47:09.693165 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m18:47:09.751163 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m18:47:09.789159 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m18:47:09.791160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016564B79D90>]}
+[0m18:47:11.297165 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m18:47:11.311161 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m18:47:11.317164 [debug] [MainThread]: 1699: static parser successfully parsed RAW\TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM.sql
+[0m18:47:11.321161 [debug] [MainThread]: 1699: static parser successfully parsed RAW\TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT.sql
+[0m18:47:11.384166 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_poc.L1
+[0m18:47:11.391164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656579C910>]}
+[0m18:47:11.479165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656563D250>]}
+[0m18:47:11.480163 [info ] [MainThread]: Found 4 models, 4 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m18:47:11.482163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656020AC50>]}
+[0m18:47:11.485163 [info ] [MainThread]: 
+[0m18:47:11.486163 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:47:11.488163 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COMMEX_DB'
+[0m18:47:11.515165 [debug] [ThreadPool]: Using snowflake connection "list_COMMEX_DB"
+[0m18:47:11.516165 [debug] [ThreadPool]: On list_COMMEX_DB: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "list_COMMEX_DB"} */
+show terse schemas in database COMMEX_DB
+    limit 10000
+[0m18:47:11.516165 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:13.634520 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.0 seconds
+[0m18:47:13.636523 [debug] [ThreadPool]: On list_COMMEX_DB: Close
+[0m18:47:14.144623 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COMMEX_DB_DIGITAL_SHELF_DBT'
+[0m18:47:14.151625 [debug] [ThreadPool]: Using snowflake connection "list_COMMEX_DB_DIGITAL_SHELF_DBT"
+[0m18:47:14.151625 [debug] [ThreadPool]: On list_COMMEX_DB_DIGITAL_SHELF_DBT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "list_COMMEX_DB_DIGITAL_SHELF_DBT"} */
+show terse objects in COMMEX_DB.DIGITAL_SHELF_DBT
+[0m18:47:14.152630 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:15.870396 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.0 seconds
+[0m18:47:15.872397 [debug] [ThreadPool]: On list_COMMEX_DB_DIGITAL_SHELF_DBT: Close
+[0m18:47:16.442276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656578B9D0>]}
+[0m18:47:16.443275 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:47:16.444271 [info ] [MainThread]: 
+[0m18:47:16.470275 [debug] [Thread-1 (]: Began running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:47:16.470275 [debug] [Thread-2 (]: Began running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:47:16.471276 [debug] [Thread-3 (]: Began running node model.dbt_poc.my_first_dbt_model
+[0m18:47:16.471276 [info ] [Thread-1 (]: 1 of 4 START sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM  [RUN]
+[0m18:47:16.472278 [info ] [Thread-2 (]: 2 of 4 START sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT  [RUN]
+[0m18:47:16.474274 [info ] [Thread-3 (]: 3 of 4 START sql table model DIGITAL_SHELF_DBT.my_first_dbt_model .............. [RUN]
+[0m18:47:16.475275 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM'
+[0m18:47:16.476276 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT'
+[0m18:47:16.477274 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_poc.my_first_dbt_model'
+[0m18:47:16.478277 [debug] [Thread-1 (]: Began compiling node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:47:16.478277 [debug] [Thread-2 (]: Began compiling node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:47:16.479274 [debug] [Thread-3 (]: Began compiling node model.dbt_poc.my_first_dbt_model
+[0m18:47:16.482278 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:47:16.484279 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:47:16.487275 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_poc.my_first_dbt_model"
+[0m18:47:16.489275 [debug] [Thread-1 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM (compile): 18:47:16.479274 => 18:47:16.488278
+[0m18:47:16.490274 [debug] [Thread-1 (]: Began executing node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:47:16.545273 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:47:16.546272 [debug] [Thread-3 (]: Timing info for model.dbt_poc.my_first_dbt_model (compile): 18:47:16.485273 => 18:47:16.546272
+[0m18:47:16.547274 [debug] [Thread-2 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT (compile): 18:47:16.482278 => 18:47:16.547274
+[0m18:47:16.548276 [debug] [Thread-3 (]: Began executing node model.dbt_poc.my_first_dbt_model
+[0m18:47:16.549275 [debug] [Thread-2 (]: Began executing node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:47:16.550273 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:47:16.555274 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_poc.my_first_dbt_model"
+[0m18:47:16.572274 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:47:16.575276 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_poc.my_first_dbt_model"
+[0m18:47:16.575276 [debug] [Thread-3 (]: On model.dbt_poc.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.my_first_dbt_model"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.my_first_dbt_model
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m18:47:16.576276 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:47:16.572274 [debug] [Thread-1 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+         as
+        (
+
+with source_data as (
+
+select a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date
+, max(date) as End_date
+from PACVUE_KENVUE.KENVUE.KENVUE_CRITEO_AD__DAYREPORT_LINE_ITEM a
+left join COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_RETAILERS b
+on  a.retailer_id = b.retailer_id
+group by 1,2
+
+)
+
+select *
+from source_data
+        );
+[0m18:47:16.578276 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:47:16.582276 [debug] [Thread-2 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+         as
+        (
+
+with source_data as (
+
+select distinct a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date, max(date) as End_date from COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_AD__DAYREPORT_PRODUCT a
+left join COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_RETAILERS b
+on  a.retailer_id = b.retailer_id
+group by 1,2
+
+)
+
+select *
+from source_data
+        );
+[0m18:47:16.587273 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:47:16.581276 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:47:20.212728 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m18:47:20.240729 [debug] [Thread-3 (]: Timing info for model.dbt_poc.my_first_dbt_model (execute): 18:47:16.551276 => 18:47:20.239727
+[0m18:47:20.240729 [debug] [Thread-3 (]: On model.dbt_poc.my_first_dbt_model: Close
+[0m18:47:20.293729 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m18:47:20.296730 [debug] [Thread-1 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM (execute): 18:47:16.490274 => 18:47:20.296730
+[0m18:47:20.297732 [debug] [Thread-1 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM: Close
+[0m18:47:20.381730 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 4.0 seconds
+[0m18:47:20.384728 [debug] [Thread-2 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT (execute): 18:47:16.556276 => 18:47:20.384728
+[0m18:47:20.385726 [debug] [Thread-2 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT: Close
+[0m18:47:20.732738 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016566002850>]}
+[0m18:47:20.733731 [info ] [Thread-3 (]: 3 of 4 OK created sql table model DIGITAL_SHELF_DBT.my_first_dbt_model ......... [[32mSUCCESS 1[0m in 4.25s]
+[0m18:47:20.734735 [debug] [Thread-3 (]: Finished running node model.dbt_poc.my_first_dbt_model
+[0m18:47:20.735735 [debug] [Thread-4 (]: Began running node model.dbt_poc.my_second_dbt_model
+[0m18:47:20.736732 [info ] [Thread-4 (]: 4 of 4 START sql view model DIGITAL_SHELF_DBT.my_second_dbt_model .............. [RUN]
+[0m18:47:20.738734 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_poc.my_second_dbt_model'
+[0m18:47:20.738734 [debug] [Thread-4 (]: Began compiling node model.dbt_poc.my_second_dbt_model
+[0m18:47:20.743735 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_poc.my_second_dbt_model"
+[0m18:47:20.755731 [debug] [Thread-4 (]: Timing info for model.dbt_poc.my_second_dbt_model (compile): 18:47:20.739734 => 18:47:20.748731
+[0m18:47:20.756734 [debug] [Thread-4 (]: Began executing node model.dbt_poc.my_second_dbt_model
+[0m18:47:20.828731 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_poc.my_second_dbt_model"
+[0m18:47:20.830735 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_poc.my_second_dbt_model"
+[0m18:47:20.831734 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016565ED6190>]}
+[0m18:47:20.832736 [debug] [Thread-4 (]: On model.dbt_poc.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.my_second_dbt_model"} */
+create or replace   view COMMEX_DB.DIGITAL_SHELF_DBT.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from COMMEX_DB.DIGITAL_SHELF_DBT.my_first_dbt_model
+where id = 1
+  );
+[0m18:47:20.834735 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:47:20.833734 [info ] [Thread-1 (]: 1 of 4 OK created sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM  [[32mSUCCESS 1[0m in 4.36s]
+[0m18:47:20.839732 [debug] [Thread-1 (]: Finished running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:47:20.875731 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656602E6D0>]}
+[0m18:47:20.876733 [info ] [Thread-2 (]: 2 of 4 OK created sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT  [[32mSUCCESS 1[0m in 4.40s]
+[0m18:47:20.885734 [debug] [Thread-2 (]: Finished running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:47:22.847236 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:47:22.852232 [debug] [Thread-4 (]: Timing info for model.dbt_poc.my_second_dbt_model (execute): 18:47:20.756734 => 18:47:22.852232
+[0m18:47:22.853233 [debug] [Thread-4 (]: On model.dbt_poc.my_second_dbt_model: Close
+[0m18:47:23.345081 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7d376c7-01ad-4f47-8422-d3dd198cf0b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016565ED6590>]}
+[0m18:47:23.346085 [info ] [Thread-4 (]: 4 of 4 OK created sql view model DIGITAL_SHELF_DBT.my_second_dbt_model ......... [[32mSUCCESS 1[0m in 2.61s]
+[0m18:47:23.348081 [debug] [Thread-4 (]: Finished running node model.dbt_poc.my_second_dbt_model
+[0m18:47:23.350081 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:47:23.351082 [debug] [MainThread]: Connection 'list_COMMEX_DB' was properly closed.
+[0m18:47:23.351082 [debug] [MainThread]: Connection 'list_COMMEX_DB_DIGITAL_SHELF_DBT' was properly closed.
+[0m18:47:23.352082 [debug] [MainThread]: Connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM' was properly closed.
+[0m18:47:23.353083 [debug] [MainThread]: Connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT' was properly closed.
+[0m18:47:23.356079 [debug] [MainThread]: Connection 'model.dbt_poc.my_first_dbt_model' was properly closed.
+[0m18:47:23.362078 [debug] [MainThread]: Connection 'model.dbt_poc.my_second_dbt_model' was properly closed.
+[0m18:47:23.367080 [info ] [MainThread]: 
+[0m18:47:23.368081 [info ] [MainThread]: Finished running 3 table models, 1 view model in 0 hours 0 minutes and 11.88 seconds (11.88s).
+[0m18:47:23.371082 [debug] [MainThread]: Command end result
+[0m18:47:23.392081 [info ] [MainThread]: 
+[0m18:47:23.394083 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:47:23.395084 [info ] [MainThread]: 
+[0m18:47:23.396080 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m18:47:23.398085 [debug] [MainThread]: Command `dbt run` succeeded at 18:47:23.398085 after 14.47 seconds
+[0m18:47:23.399084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001656403E910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001655F13FE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001655F13F150>]}
+[0m18:47:23.400084 [debug] [MainThread]: Flushing usage events
+[0m18:47:23.527080 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
