@@ -1,5 +1,6 @@
 
-{{ config(materialized='table') }}
+{{ config(materialized='table',
+pre_hook='TRUNCATE TABLE  TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT') }}
 
 with source_data as (
 
