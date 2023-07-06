@@ -1,21 +1,17 @@
 
 version: 2
 
-models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+sources:
+  - name: KENVUE
+    database: PACVUE_KENVUE
+    quoting:
+      database: true
+      schema: true
+      identifier: true
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+    tables:
+      - name: KENVUE_CRITEO_AD__DAYREPORT_LINE_ITEM
+      - name: KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+        quoting:
+          identifier: false
+

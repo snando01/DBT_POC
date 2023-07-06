@@ -1,6 +1,9 @@
 
-{{ config(materialized='table') }}
-
+{{ config(
+   pre_hook='TRUNCATE TABLE  TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM'
+   ) 
+ }}
+ 
 with source_data as (
 
 select a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date
