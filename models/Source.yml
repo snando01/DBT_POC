@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+    - name: RETMEDIA_INTEGRATION
+      description: NA
+      database: DEV_COMX_GLOBAL
+      schema: RETMEDIA_INTEGRATION
+      tables:
+          - name: KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+          - name:  KENVUE_CITRUS_AD_CAMPAIGN
+          - name:  KENVUE_CITRUS_AD_TAG 
+
+    - name: KENVUE
+      description: NA
+      database: PACVUE_KENVUE
+      schema: KENVUE
+      tables:
+          - name: KENVUE_CRITEO_AD__DAYREPORT_LINE_ITEM
+
+    - name: DIGITAL_SHELF
+      description: NA
+      database: COMMEX_DB
+      schema: DIGITAL_SHELF
+      tables:
+          - name: KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+          - name: KENVUE_CRITEO_RETAILERS
+              

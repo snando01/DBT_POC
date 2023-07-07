@@ -44,7 +44,7 @@ COALESCE(sales / NULLIF(unit_sales ,0), 0) as AOV,
 COALESCE(spend / NULLIF(unit_sales,0), 0) as CPA,
 COALESCE(spend / NULLIF(sales,0), 0) as ACOS
 
-from "DEV_COMX_GLOBAL"."RETMEDIA_INTEGRATION"."KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN" camp
+from source {{('RETMEDIA_INTEGRATION','KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN')}} camp
 left join
 (
 select  CLIENT_ID,
@@ -61,10 +61,10 @@ MAX(case when FIELD_NAME='GBU' then FIELD_VALUE  else NULL end) as GBU
 from (
 
 select a.*,c.tag_name field_name , b.tag_name field_value
-from DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_CAMPAIGN a
-left join DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_TAG b
+from source{{('RETMEDIA_INTEGRATION','KENVUE_CITRUS_AD_CAMPAIGN')}} a
+left join source{{('RETMEDIA_INTEGRATION','KENVUE_CITRUS_AD_TAG')}} b
 on a.tag_id = b.id
-left join DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_TAG c
+left join source{{('RETMEDIA_INTEGRATION','KENVUE_CITRUS_AD_TAG')}} c
 on b.parent_id = c.id
 where --a.campaign_id = 'bbe8d20c-adbb-4a84-9600-d4646291dcdd'and 
 b.is_deleted = 'FALSE' and c.is_deleted = 'FALSE') A
