@@ -1,17 +1,1 @@
 
-version: 2
-
-sources:
-  - name: KENVUE
-    database: PACVUE_KENVUE
-    quoting:
-      database: true
-      schema: true
-      identifier: true
-
-    tables:
-      - name: KENVUE_CRITEO_AD__DAYREPORT_LINE_ITEM
-      - name: KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
-        quoting:
-          identifier: false
-
