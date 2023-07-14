@@ -9,7 +9,7 @@
 select
 camp.DATE,
 'US' as COUNTRY,
-dim.BRAND ,
+dim.BRAND,
 dim.SUB_BRAND,
 camp.CAMPAIGN_ID,
 camp.AD_SPEND,

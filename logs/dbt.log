@@ -6803,3 +6803,673 @@ where id = 1
 [0m20:22:35.607026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180107ACED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001800BD3FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001800BD3F150>]}
 [0m20:22:35.608028 [debug] [MainThread]: Flushing usage events
 [0m20:22:36.452429 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m20:25:06.641862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F3944E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F39742D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F3466B50>]}
+
+
+============================== 20:25:06.641862 | 9c5a927a-9e75-4412-90a3-93e9972c8bed ==============================
+[0m20:25:06.641862 [info ] [MainThread]: Running with dbt=1.5.2
+[0m20:25:06.657506 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\SNando01\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\SNando01\\DBT_POC\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:25:06.952725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c5a927a-9e75-4412-90a3-93e9972c8bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F3934CD0>]}
+[0m20:25:06.968367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c5a927a-9e75-4412-90a3-93e9972c8bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F4A83910>]}
+[0m20:25:06.968367 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m20:25:07.009564 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m20:25:07.089566 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:25:07.090567 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:25:07.099578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9c5a927a-9e75-4412-90a3-93e9972c8bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F4A8E550>]}
+[0m20:25:07.101566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9c5a927a-9e75-4412-90a3-93e9972c8bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F4B7B990>]}
+[0m20:25:07.101566 [info ] [MainThread]: Found 7 models, 0 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:25:07.104566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9c5a927a-9e75-4412-90a3-93e9972c8bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F3D4B250>]}
+[0m20:25:07.106570 [info ] [MainThread]: 
+[0m20:25:07.107565 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:25:07.109566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COMMEX_DB_DIGITAL_SHELF_DBT'
+[0m20:25:07.135564 [debug] [ThreadPool]: Using snowflake connection "list_COMMEX_DB_DIGITAL_SHELF_DBT"
+[0m20:25:07.135564 [debug] [ThreadPool]: On list_COMMEX_DB_DIGITAL_SHELF_DBT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "list_COMMEX_DB_DIGITAL_SHELF_DBT"} */
+show terse objects in COMMEX_DB.DIGITAL_SHELF_DBT
+[0m20:25:07.136565 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:25:09.082666 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 2.0 seconds
+[0m20:25:09.098303 [debug] [ThreadPool]: On list_COMMEX_DB_DIGITAL_SHELF_DBT: Close
+[0m20:25:09.583101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9c5a927a-9e75-4412-90a3-93e9972c8bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F3D4B250>]}
+[0m20:25:09.583101 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:25:09.598737 [info ] [MainThread]: 
+[0m20:25:09.617112 [debug] [Thread-1 (]: Began running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m20:25:09.621113 [debug] [Thread-2 (]: Began running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.624113 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM'
+[0m20:25:09.624113 [debug] [Thread-3 (]: Began running node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m20:25:09.625114 [debug] [Thread-4 (]: Began running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m20:25:09.626114 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT'
+[0m20:25:09.626114 [debug] [Thread-1 (]: Began compiling node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m20:25:09.627113 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN'
+[0m20:25:09.628112 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM'
+[0m20:25:09.629113 [debug] [Thread-2 (]: Began compiling node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.633112 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m20:25:09.634112 [debug] [Thread-3 (]: Began compiling node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m20:25:09.635115 [debug] [Thread-4 (]: Began compiling node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m20:25:09.640116 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m20:25:09.648112 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"
+[0m20:25:09.656115 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM"
+[0m20:25:09.657115 [debug] [Thread-1 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM (compile): 20:25:09.629113 => 20:25:09.657115
+[0m20:25:09.659115 [debug] [Thread-2 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT (compile): 20:25:09.636113 => 20:25:09.658115
+[0m20:25:09.660113 [debug] [Thread-3 (]: Timing info for model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN (compile): 20:25:09.641117 => 20:25:09.659115
+[0m20:25:09.660113 [debug] [Thread-1 (]: Began executing node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m20:25:09.661116 [debug] [Thread-4 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM (compile): 20:25:09.653112 => 20:25:09.661116
+[0m20:25:09.662116 [debug] [Thread-2 (]: Began executing node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.663115 [debug] [Thread-3 (]: Began executing node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m20:25:09.663115 [debug] [Thread-1 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM (execute): 20:25:09.663115 => 20:25:09.663115
+[0m20:25:09.664117 [debug] [Thread-4 (]: Began executing node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m20:25:09.665117 [debug] [Thread-2 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT (execute): 20:25:09.665117 => 20:25:09.665117
+[0m20:25:09.666114 [debug] [Thread-3 (]: Timing info for model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN (execute): 20:25:09.666114 => 20:25:09.666114
+[0m20:25:09.667113 [debug] [Thread-1 (]: Finished running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m20:25:09.672115 [debug] [Thread-1 (]: Began running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.670115 [debug] [Thread-2 (]: Finished running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.671115 [debug] [Thread-3 (]: Finished running node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m20:25:09.668116 [debug] [Thread-4 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM (execute): 20:25:09.668116 => 20:25:09.668116
+[0m20:25:09.673116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM, now model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT)
+[0m20:25:09.674116 [debug] [Thread-2 (]: Began running node model.dbt_poc.my_first_dbt_model
+[0m20:25:09.683114 [debug] [Thread-4 (]: Finished running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m20:25:09.683114 [debug] [Thread-1 (]: Began compiling node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.685117 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT, now model.dbt_poc.my_first_dbt_model)
+[0m20:25:09.688113 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m20:25:09.689115 [debug] [Thread-2 (]: Began compiling node model.dbt_poc.my_first_dbt_model
+[0m20:25:09.692112 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_poc.my_first_dbt_model"
+[0m20:25:09.692112 [debug] [Thread-1 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT (compile): 20:25:09.685117 => 20:25:09.692112
+[0m20:25:09.693115 [debug] [Thread-1 (]: Began executing node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.694112 [debug] [Thread-2 (]: Timing info for model.dbt_poc.my_first_dbt_model (compile): 20:25:09.690115 => 20:25:09.694112
+[0m20:25:09.695114 [debug] [Thread-1 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT (execute): 20:25:09.694112 => 20:25:09.694112
+[0m20:25:09.695114 [debug] [Thread-2 (]: Began executing node model.dbt_poc.my_first_dbt_model
+[0m20:25:09.697115 [debug] [Thread-1 (]: Finished running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m20:25:09.698115 [debug] [Thread-2 (]: Timing info for model.dbt_poc.my_first_dbt_model (execute): 20:25:09.697115 => 20:25:09.697115
+[0m20:25:09.699114 [debug] [Thread-2 (]: Finished running node model.dbt_poc.my_first_dbt_model
+[0m20:25:09.700118 [debug] [Thread-3 (]: Began running node model.dbt_poc.my_second_dbt_model
+[0m20:25:09.701114 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN, now model.dbt_poc.my_second_dbt_model)
+[0m20:25:09.702118 [debug] [Thread-3 (]: Began compiling node model.dbt_poc.my_second_dbt_model
+[0m20:25:09.706119 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_poc.my_second_dbt_model"
+[0m20:25:09.714115 [debug] [Thread-3 (]: Timing info for model.dbt_poc.my_second_dbt_model (compile): 20:25:09.702118 => 20:25:09.714115
+[0m20:25:09.715116 [debug] [Thread-3 (]: Began executing node model.dbt_poc.my_second_dbt_model
+[0m20:25:09.716116 [debug] [Thread-3 (]: Timing info for model.dbt_poc.my_second_dbt_model (execute): 20:25:09.716116 => 20:25:09.716116
+[0m20:25:09.717117 [debug] [Thread-3 (]: Finished running node model.dbt_poc.my_second_dbt_model
+[0m20:25:09.718114 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:25:09.719116 [debug] [MainThread]: Connection 'list_COMMEX_DB_DIGITAL_SHELF_DBT' was properly closed.
+[0m20:25:09.719116 [debug] [MainThread]: Connection 'model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT' was properly closed.
+[0m20:25:09.720113 [debug] [MainThread]: Connection 'model.dbt_poc.my_first_dbt_model' was properly closed.
+[0m20:25:09.720113 [debug] [MainThread]: Connection 'model.dbt_poc.my_second_dbt_model' was properly closed.
+[0m20:25:09.721113 [debug] [MainThread]: Connection 'model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM' was properly closed.
+[0m20:25:09.723112 [debug] [MainThread]: Command end result
+[0m20:25:09.875762 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m20:25:09.875762 [info ] [MainThread]: Building catalog
+[0m20:25:09.885072 [debug] [ThreadPool]: Acquiring new snowflake connection 'COMMEX_DB.information_schema'
+[0m20:25:09.886073 [debug] [ThreadPool]: Acquiring new snowflake connection 'DEV_COMX_GLOBAL.information_schema'
+[0m20:25:09.908071 [debug] [ThreadPool]: Using snowflake connection "COMMEX_DB.information_schema"
+[0m20:25:09.908071 [debug] [ThreadPool]: Acquiring new snowflake connection 'PACVUE_KENVUE.information_schema'
+[0m20:25:09.911068 [debug] [ThreadPool]: Using snowflake connection "DEV_COMX_GLOBAL.information_schema"
+[0m20:25:09.912068 [debug] [ThreadPool]: On COMMEX_DB.information_schema: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "COMMEX_DB.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from COMMEX_DB.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from COMMEX_DB.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('digital_shelf') or upper("table_schema") = upper('digital_shelf_dbt'))
+      order by "column_index"
+[0m20:25:09.916072 [debug] [ThreadPool]: Using snowflake connection "PACVUE_KENVUE.information_schema"
+[0m20:25:09.917071 [debug] [ThreadPool]: On DEV_COMX_GLOBAL.information_schema: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "DEV_COMX_GLOBAL.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from DEV_COMX_GLOBAL.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from DEV_COMX_GLOBAL.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('retmedia_integration'))
+      order by "column_index"
+[0m20:25:09.917071 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:25:09.918068 [debug] [ThreadPool]: On PACVUE_KENVUE.information_schema: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "PACVUE_KENVUE.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from PACVUE_KENVUE.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from PACVUE_KENVUE.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('kenvue'))
+      order by "column_index"
+[0m20:25:09.919071 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:25:09.921069 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:25:14.300263 [debug] [ThreadPool]: SQL status: SUCCESS 430 in 4.0 seconds
+[0m20:25:14.458596 [debug] [ThreadPool]: SQL status: SUCCESS 685 in 5.0 seconds
+[0m20:25:14.594960 [debug] [ThreadPool]: SQL status: SUCCESS 1837 in 5.0 seconds
+[0m20:25:16.938108 [debug] [ThreadPool]: On COMMEX_DB.information_schema: Close
+[0m20:25:17.183110 [debug] [ThreadPool]: On DEV_COMX_GLOBAL.information_schema: Close
+[0m20:25:17.661487 [debug] [ThreadPool]: On PACVUE_KENVUE.information_schema: Close
+[0m20:25:18.598424 [info ] [MainThread]: Catalog written to C:\Users\SNando01\DBT_POC\target\catalog.json
+[0m20:25:18.611357 [debug] [MainThread]: Command `dbt docs generate` succeeded at 20:25:18.610354 after 12.22 seconds
+[0m20:25:18.611357 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m20:25:18.612355 [debug] [MainThread]: Connection 'COMMEX_DB.information_schema' was properly closed.
+[0m20:25:18.613353 [debug] [MainThread]: Connection 'DEV_COMX_GLOBAL.information_schema' was properly closed.
+[0m20:25:18.613353 [debug] [MainThread]: Connection 'PACVUE_KENVUE.information_schema' was properly closed.
+[0m20:25:18.621352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F3945E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2F4B49090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2EE53F210>]}
+[0m20:25:18.622354 [debug] [MainThread]: Flushing usage events
+[0m20:25:19.487403 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m18:54:46.332350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22D35EA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22CE5AC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22CEF3490>]}
+
+
+============================== 18:54:46.336355 | 48be1b2e-c2b1-4f65-820f-9f0c85362f99 ==============================
+[0m18:54:46.336355 [info ] [MainThread]: Running with dbt=1.5.2
+[0m18:54:46.338347 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\SNando01\\DBT_POC\\logs', 'profiles_dir': 'C:\\Users\\SNando01\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:54:48.266746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22CF0FF90>]}
+[0m18:54:48.279742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22E44CB50>]}
+[0m18:54:48.285759 [info ] [MainThread]: Registered adapter: snowflake=1.5.2
+[0m18:54:48.321749 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m18:54:48.934761 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m18:54:48.934761 [debug] [MainThread]: Partial parsing: updated file: dbt_poc://models\RAW\TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN.sql
+[0m18:54:48.935764 [debug] [MainThread]: Partial parsing: updated file: dbt_poc://models\RAW\TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM.sql
+[0m18:54:48.958753 [debug] [MainThread]: 1603: static parser failed on RAW\TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN.sql
+[0m18:54:48.976746 [debug] [MainThread]: 1602: parser fallback to jinja rendering on RAW\TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN.sql
+[0m18:54:48.979753 [debug] [MainThread]: 1603: static parser failed on RAW\TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM.sql
+[0m18:54:48.984753 [debug] [MainThread]: 1602: parser fallback to jinja rendering on RAW\TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM.sql
+[0m18:54:48.995754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22E469B50>]}
+[0m18:54:49.003755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22E5D7B90>]}
+[0m18:54:49.004760 [info ] [MainThread]: Found 7 models, 0 tests, 0 snapshots, 0 analyses, 322 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics, 0 groups
+[0m18:54:49.005754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B229012B50>]}
+[0m18:54:49.008748 [info ] [MainThread]: 
+[0m18:54:49.013759 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:54:49.034755 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COMMEX_DB'
+[0m18:54:49.063750 [debug] [ThreadPool]: Using snowflake connection "list_COMMEX_DB"
+[0m18:54:49.064746 [debug] [ThreadPool]: On list_COMMEX_DB: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "list_COMMEX_DB"} */
+show terse schemas in database COMMEX_DB
+    limit 10000
+[0m18:54:49.065750 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:54:53.568070 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 5.0 seconds
+[0m18:54:53.570074 [debug] [ThreadPool]: On list_COMMEX_DB: Close
+[0m18:54:54.048510 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COMMEX_DB_DIGITAL_SHELF_DBT'
+[0m18:54:54.055506 [debug] [ThreadPool]: Using snowflake connection "list_COMMEX_DB_DIGITAL_SHELF_DBT"
+[0m18:54:54.055506 [debug] [ThreadPool]: On list_COMMEX_DB_DIGITAL_SHELF_DBT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "connection_name": "list_COMMEX_DB_DIGITAL_SHELF_DBT"} */
+show terse objects in COMMEX_DB.DIGITAL_SHELF_DBT
+[0m18:54:54.056508 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:54:55.651276 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 2.0 seconds
+[0m18:54:55.654280 [debug] [ThreadPool]: On list_COMMEX_DB_DIGITAL_SHELF_DBT: Close
+[0m18:54:56.134431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22EC7B6D0>]}
+[0m18:54:56.135434 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:54:56.136435 [info ] [MainThread]: 
+[0m18:54:56.166443 [debug] [Thread-1 (]: Began running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:54:56.167439 [debug] [Thread-2 (]: Began running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:56.167439 [debug] [Thread-3 (]: Began running node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m18:54:56.168439 [debug] [Thread-4 (]: Began running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m18:54:56.168439 [info ] [Thread-1 (]: 1 of 7 START sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM  [RUN]
+[0m18:54:56.169439 [info ] [Thread-2 (]: 2 of 7 START sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT  [RUN]
+[0m18:54:56.171437 [info ] [Thread-3 (]: 3 of 7 START sql table model DIGITAL_SHELF_DBT.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN  [RUN]
+[0m18:54:56.172437 [info ] [Thread-4 (]: 4 of 7 START sql view model DIGITAL_SHELF_DBT.VW_CRITEO_AD__DAYREPORT_LINE_ITEM  [RUN]
+[0m18:54:56.174437 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM'
+[0m18:54:56.175443 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT'
+[0m18:54:56.176447 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN'
+[0m18:54:56.177437 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM'
+[0m18:54:56.178438 [debug] [Thread-1 (]: Began compiling node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:54:56.179451 [debug] [Thread-2 (]: Began compiling node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:56.180437 [debug] [Thread-3 (]: Began compiling node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m18:54:56.180437 [debug] [Thread-4 (]: Began compiling node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m18:54:56.184435 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:54:56.189444 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:56.341434 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"
+[0m18:54:56.344430 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM"
+[0m18:54:56.346437 [debug] [Thread-1 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM (compile): 18:54:56.181439 => 18:54:56.346437
+[0m18:54:56.347447 [debug] [Thread-2 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT (compile): 18:54:56.184435 => 18:54:56.347447
+[0m18:54:56.348445 [debug] [Thread-4 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM (compile): 18:54:56.205435 => 18:54:56.348445
+[0m18:54:56.352439 [debug] [Thread-4 (]: Began executing node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m18:54:56.349445 [debug] [Thread-1 (]: Began executing node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:54:56.351441 [debug] [Thread-2 (]: Began executing node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:56.350440 [debug] [Thread-3 (]: Timing info for model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN (compile): 18:54:56.190444 => 18:54:56.349445
+[0m18:54:56.389448 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM"
+[0m18:54:56.399437 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:54:56.401430 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:56.402430 [debug] [Thread-3 (]: Began executing node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m18:54:56.403450 [debug] [Thread-1 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"} */
+TRUNCATE TABLE  TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:54:56.404445 [debug] [Thread-2 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"} */
+TRUNCATE TABLE  TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:56.405439 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM"
+[0m18:54:56.409446 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"
+[0m18:54:56.410436 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:54:56.411441 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:54:56.411441 [debug] [Thread-4 (]: On model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM"} */
+create or replace   view COMMEX_DB.DIGITAL_SHELF_DBT.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+  
+   as (
+    
+
+with final as (
+
+select a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date
+, max(date) as End_date
+from  PACVUE_KENVUE.KENVUE.KENVUE_CRITEO_AD__DAYREPORT_LINE_ITEM  a
+left join   COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_RETAILERS  b
+on  a.retailer_id = b.retailer_id
+group by 1,2
+
+)
+
+select *
+from final
+  );
+[0m18:54:56.412445 [debug] [Thread-3 (]: On model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"} */
+TRUNCATE TABLE  TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m18:54:56.417443 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:54:56.418435 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:54:58.611198 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:54:58.627202 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"
+[0m18:54:58.633200 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"
+[0m18:54:58.634200 [debug] [Thread-3 (]: On model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+         as
+        (
+
+ 
+-- CAMPAIGN fact columns
+--
+select
+camp.DATE,
+'US' as COUNTRY,
+dim.BRAND,
+dim.SUB_BRAND,
+camp.CAMPAIGN_ID,
+camp.AD_SPEND,
+camp.SPEND,
+camp.IMPRESSIONS,
+camp.CLICKS,
+camp.UNIT_SALES,
+camp.SALES,
+dim.GBU,
+dim.SQUAD,
+'TARGET'  as PLATFORM,
+camp.CLIENT_ID,
+camp.ID,
+camp.CATALOG_ID,
+camp.TEAM_ID,
+camp.YEAR,
+camp.QUARTER_OF_YEAR,
+camp.MONTH_OF_YEAR,
+camp.WEEK_OF_YEAR,
+camp.UPDATE_TIME,
+camp.HASH_ID,
+camp.CAMPAIGN_NAME,
+dim.PROFILE_ID,
+dim.YR,
+dim.KEYWORD_CATEGORY,
+--CAMPAIGN derived columns
+COALESCE(sales / NULLIF(spend,0), 0) as ROAS,
+COALESCE(spend / NULLIF(clicks,0), 0) as CPC,
+COALESCE(clicks / NULLIF(impressions,0), 0) as CTR,
+COALESCE(unit_sales  / NULLIF(clicks,0), 0) as CVR,
+COALESCE(sales / NULLIF(unit_sales ,0), 0) as AOV,
+COALESCE(spend / NULLIF(unit_sales,0), 0) as CPA,
+COALESCE(spend / NULLIF(sales,0), 0) as ACOS
+
+from  DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN  camp
+left join
+(
+select  CLIENT_ID,
+--ID,
+--TAG_ID,
+PROFILE_ID,
+CAMPAIGN_ID,
+MAX(case when FIELD_NAME='Sub-Brand' then FIELD_VALUE else NULL end) as Sub_Brand,
+MAX(case when FIELD_NAME='Year' then FIELD_VALUE  else NULL end) as Yr,
+MAX(case when FIELD_NAME='Keyword Category' then FIELD_VALUE  else NULL end) as Keyword_Category,
+MAX(case when FIELD_NAME='Squad' then FIELD_VALUE  else NULL end) as Squad,
+MAX(case when FIELD_NAME='Brand' then FIELD_VALUE  else NULL end) as Brand,
+MAX(case when FIELD_NAME='GBU' then FIELD_VALUE  else NULL end) as GBU
+from (
+
+select a.*,c.tag_name field_name , b.tag_name field_value
+from  DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_CAMPAIGN  a
+left join  DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_TAG  b
+on a.tag_id = b.id
+left join  DEV_COMX_GLOBAL.RETMEDIA_INTEGRATION.KENVUE_CITRUS_AD_TAG  c
+on b.parent_id = c.id
+where --a.campaign_id = 'bbe8d20c-adbb-4a84-9600-d4646291dcdd'and 
+b.is_deleted = 'FALSE' and c.is_deleted = 'FALSE') A
+
+group by   
+CLIENT_ID,
+--ID,
+--TAG_ID,
+PROFILE_ID,
+CAMPAIGN_ID
+) as dim
+on camp.CLIENT_ID = dim.CLIENT_ID
+AND camp.CAMPAIGN_ID= dim.CAMPAIGN_ID
+        );
+[0m18:54:58.674194 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:54:58.676204 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:58.678198 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:58.679199 [debug] [Thread-2 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+         as
+        (
+
+with final as (
+
+select distinct a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date, max(date) as End_date
+from  COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_AD__DAYREPORT_PRODUCT a
+left join  COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_RETAILERS b
+on  a.retailer_id = b.retailer_id
+group by 1,2
+
+)
+
+
+
+select *
+from final
+        );
+[0m18:54:58.713198 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:54:58.715203 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:54:58.718206 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"
+[0m18:54:58.719197 [debug] [Thread-1 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+         as
+        (
+ 
+with final as (
+
+select a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date
+, max(date) as End_date
+from  PACVUE_KENVUE.KENVUE.KENVUE_CRITEO_AD__DAYREPORT_LINE_ITEM  a
+left join  COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_RETAILERS b
+on  a.retailer_id = b.retailer_id
+group by 1,2
+
+)
+
+select *
+from final
+        );
+[0m18:54:58.782384 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:54:58.806388 [debug] [Thread-4 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM (execute): 18:54:56.352439 => 18:54:58.806388
+[0m18:54:58.807391 [debug] [Thread-4 (]: On model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM: Close
+[0m18:54:59.332798 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22EE07A50>]}
+[0m18:54:59.333797 [info ] [Thread-4 (]: 4 of 7 OK created sql view model DIGITAL_SHELF_DBT.VW_CRITEO_AD__DAYREPORT_LINE_ITEM  [[32mSUCCESS 1[0m in 3.16s]
+[0m18:54:59.335802 [debug] [Thread-4 (]: Finished running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM
+[0m18:54:59.336801 [debug] [Thread-4 (]: Began running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:59.337800 [info ] [Thread-4 (]: 5 of 7 START sql view model DIGITAL_SHELF_DBT.VW_CRITEO_AD__DAYREPORT_PRODUCT .. [RUN]
+[0m18:54:59.339805 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_poc.VW_CRITEO_AD__DAYREPORT_LINE_ITEM, now model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT)
+[0m18:54:59.339805 [debug] [Thread-4 (]: Began compiling node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:59.344804 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:59.345798 [debug] [Thread-4 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT (compile): 18:54:59.340809 => 18:54:59.345798
+[0m18:54:59.346808 [debug] [Thread-4 (]: Began executing node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:54:59.353806 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:59.357806 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT"
+[0m18:54:59.358808 [debug] [Thread-4 (]: On model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT"} */
+create or replace   view COMMEX_DB.DIGITAL_SHELF_DBT.VW_CRITEO_AD__DAYREPORT_PRODUCT
+  
+   as (
+    
+
+with final as (
+
+select distinct a.retailer_id, b.retailer_name, count(a.retailer_id) as total_retailer_id, min(date) as Start_date, max(date) as End_date
+from  COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_AD__DAYREPORT_PRODUCT  a
+left join  COMMEX_DB.DIGITAL_SHELF.KENVUE_CRITEO_RETAILERS  b
+on  a.retailer_id = b.retailer_id
+group by 1,2
+
+)
+
+select *
+from final
+  );
+[0m18:54:59.359809 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:55:00.076019 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m18:55:00.080010 [debug] [Thread-1 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM (execute): 18:54:56.389448 => 18:55:00.080010
+[0m18:55:00.081020 [debug] [Thread-1 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM: Close
+[0m18:55:00.353093 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:55:00.357100 [debug] [Thread-2 (]: Timing info for model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT (execute): 18:54:56.399437 => 18:55:00.356091
+[0m18:55:00.358102 [debug] [Thread-2 (]: On model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT: Close
+[0m18:55:00.598415 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22EDF4850>]}
+[0m18:55:00.599398 [info ] [Thread-1 (]: 1 of 7 OK created sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM  [[32mSUCCESS 1[0m in 4.42s]
+[0m18:55:00.601400 [debug] [Thread-1 (]: Finished running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM
+[0m18:55:00.602400 [debug] [Thread-1 (]: Began running node model.dbt_poc.my_first_dbt_model
+[0m18:55:00.603398 [info ] [Thread-1 (]: 6 of 7 START sql table model DIGITAL_SHELF_DBT.my_first_dbt_model .............. [RUN]
+[0m18:55:00.605401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM, now model.dbt_poc.my_first_dbt_model)
+[0m18:55:00.605401 [debug] [Thread-1 (]: Began compiling node model.dbt_poc.my_first_dbt_model
+[0m18:55:00.610394 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_poc.my_first_dbt_model"
+[0m18:55:00.614395 [debug] [Thread-1 (]: Timing info for model.dbt_poc.my_first_dbt_model (compile): 18:55:00.606404 => 18:55:00.614395
+[0m18:55:00.627405 [debug] [Thread-1 (]: Began executing node model.dbt_poc.my_first_dbt_model
+[0m18:55:00.634407 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_poc.my_first_dbt_model"
+[0m18:55:00.637399 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_poc.my_first_dbt_model"
+[0m18:55:00.657398 [debug] [Thread-1 (]: On model.dbt_poc.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.my_first_dbt_model"} */
+create or replace transient table COMMEX_DB.DIGITAL_SHELF_DBT.my_first_dbt_model
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m18:55:00.659400 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:55:00.862398 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22E5F41D0>]}
+[0m18:55:00.864403 [info ] [Thread-2 (]: 2 of 7 OK created sql table model DIGITAL_SHELF_DBT.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT  [[32mSUCCESS 1[0m in 4.69s]
+[0m18:55:00.865402 [debug] [Thread-2 (]: Finished running node model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:55:01.244320 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:55:01.248323 [debug] [Thread-4 (]: Timing info for model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT (execute): 18:54:59.347805 => 18:55:01.247318
+[0m18:55:01.248323 [debug] [Thread-4 (]: On model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT: Close
+[0m18:55:01.458617 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 3.0 seconds
+[0m18:55:01.462621 [debug] [Thread-3 (]: Timing info for model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN (execute): 18:54:56.406446 => 18:55:01.462621
+[0m18:55:01.463626 [debug] [Thread-3 (]: On model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN: Close
+[0m18:55:01.763657 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22EFB6A50>]}
+[0m18:55:01.764655 [info ] [Thread-4 (]: 5 of 7 OK created sql view model DIGITAL_SHELF_DBT.VW_CRITEO_AD__DAYREPORT_PRODUCT  [[32mSUCCESS 1[0m in 2.42s]
+[0m18:55:01.767150 [debug] [Thread-4 (]: Finished running node model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT
+[0m18:55:01.969498 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22EFB65D0>]}
+[0m18:55:01.970494 [info ] [Thread-3 (]: 3 of 7 OK created sql table model DIGITAL_SHELF_DBT.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN  [[32mSUCCESS 1[0m in 5.79s]
+[0m18:55:01.972505 [debug] [Thread-3 (]: Finished running node model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN
+[0m18:55:02.726996 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:55:02.729994 [debug] [Thread-1 (]: Timing info for model.dbt_poc.my_first_dbt_model (execute): 18:55:00.628403 => 18:55:02.729994
+[0m18:55:02.730994 [debug] [Thread-1 (]: On model.dbt_poc.my_first_dbt_model: Close
+[0m18:55:03.209615 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22EE07250>]}
+[0m18:55:03.210614 [info ] [Thread-1 (]: 6 of 7 OK created sql table model DIGITAL_SHELF_DBT.my_first_dbt_model ......... [[32mSUCCESS 1[0m in 2.60s]
+[0m18:55:03.212215 [debug] [Thread-1 (]: Finished running node model.dbt_poc.my_first_dbt_model
+[0m18:55:03.213204 [debug] [Thread-2 (]: Began running node model.dbt_poc.my_second_dbt_model
+[0m18:55:03.214208 [info ] [Thread-2 (]: 7 of 7 START sql view model DIGITAL_SHELF_DBT.my_second_dbt_model .............. [RUN]
+[0m18:55:03.219203 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_poc.TBL_KENVUE_CRITEO_AD__DAYREPORT_PRODUCT, now model.dbt_poc.my_second_dbt_model)
+[0m18:55:03.228205 [debug] [Thread-2 (]: Began compiling node model.dbt_poc.my_second_dbt_model
+[0m18:55:03.241213 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_poc.my_second_dbt_model"
+[0m18:55:03.243215 [debug] [Thread-2 (]: Timing info for model.dbt_poc.my_second_dbt_model (compile): 18:55:03.237206 => 18:55:03.242213
+[0m18:55:03.243215 [debug] [Thread-2 (]: Began executing node model.dbt_poc.my_second_dbt_model
+[0m18:55:03.269203 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_poc.my_second_dbt_model"
+[0m18:55:03.272222 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_poc.my_second_dbt_model"
+[0m18:55:03.273207 [debug] [Thread-2 (]: On model.dbt_poc.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "dbt_poc", "target_name": "dev", "node_id": "model.dbt_poc.my_second_dbt_model"} */
+create or replace   view COMMEX_DB.DIGITAL_SHELF_DBT.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from COMMEX_DB.DIGITAL_SHELF_DBT.my_first_dbt_model
+where id = 1
+  );
+[0m18:55:03.274205 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:55:05.252585 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m18:55:05.256592 [debug] [Thread-2 (]: Timing info for model.dbt_poc.my_second_dbt_model (execute): 18:55:03.244215 => 18:55:05.255580
+[0m18:55:05.257615 [debug] [Thread-2 (]: On model.dbt_poc.my_second_dbt_model: Close
+[0m18:55:05.748719 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48be1b2e-c2b1-4f65-820f-9f0c85362f99', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22D99FD50>]}
+[0m18:55:05.749717 [info ] [Thread-2 (]: 7 of 7 OK created sql view model DIGITAL_SHELF_DBT.my_second_dbt_model ......... [[32mSUCCESS 1[0m in 2.53s]
+[0m18:55:05.751733 [debug] [Thread-2 (]: Finished running node model.dbt_poc.my_second_dbt_model
+[0m18:55:05.754723 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:55:05.759722 [debug] [MainThread]: Connection 'list_COMMEX_DB' was properly closed.
+[0m18:55:05.764722 [debug] [MainThread]: Connection 'list_COMMEX_DB_DIGITAL_SHELF_DBT' was properly closed.
+[0m18:55:05.772722 [debug] [MainThread]: Connection 'model.dbt_poc.my_first_dbt_model' was properly closed.
+[0m18:55:05.779725 [debug] [MainThread]: Connection 'model.dbt_poc.my_second_dbt_model' was properly closed.
+[0m18:55:05.779725 [debug] [MainThread]: Connection 'model.dbt_poc.TBL_WH_KENVUE_CITRUS_AD_DAYREPORT_CAMPAIGN' was properly closed.
+[0m18:55:05.781724 [debug] [MainThread]: Connection 'model.dbt_poc.VW_CRITEO_AD__DAYREPORT_PRODUCT' was properly closed.
+[0m18:55:05.782730 [info ] [MainThread]: 
+[0m18:55:05.783732 [info ] [MainThread]: Finished running 3 view models, 4 table models in 0 hours 0 minutes and 16.77 seconds (16.77s).
+[0m18:55:05.786734 [debug] [MainThread]: Command end result
+[0m18:55:05.832722 [info ] [MainThread]: 
+[0m18:55:05.842721 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:55:05.843723 [info ] [MainThread]: 
+[0m18:55:05.845731 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m18:55:05.847727 [debug] [MainThread]: Command `dbt run` succeeded at 18:55:05.847727 after 19.82 seconds
+[0m18:55:05.848730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22D28C150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B22CEDAB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B227EFA210>]}
+[0m18:55:05.849731 [debug] [MainThread]: Flushing usage events
+[0m18:55:06.822773 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
