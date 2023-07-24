@@ -1,4 +1,3 @@
-
 {{ config(materialized='table',
    pre_hook='TRUNCATE TABLE  TBL_KENVUE_CRITEO_AD__DAYREPORT_ITEM '
    ) 
@@ -17,4 +16,5 @@ group by 1,2
 
 select *
 from final
+
 
